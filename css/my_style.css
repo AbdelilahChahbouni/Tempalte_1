@@ -1,0 +1,122 @@
+/* Start Global Variables*/
+
+
+/* End Global Variables*/
+
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    
+}
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* End Global Rules*/
+
+.parent {
+    background-color: #eee;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   /* background-color: #aaa;*/
+}
+
+/* Header Section Style*/
+.head {
+    display: flex;
+    width: 100%;
+    
+    
+}
+.logo {
+    width: 30%;
+    padding-top: 15px;
+}
+.logo img {
+    width: 80px;
+    height: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.head .nav ul {
+    list-style-type: none;
+}
+
+.head .nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.head .nav   {
+    padding-left: 16%;
+    padding-right: 2%;
+    
+}
+
+
+/* small Screen*/
+
+@media (min-width: 768px) {
+    .container {
+        width: 750;
+    }
+}
+
+/* meduim Screen  */
+@media (min-width: 992) {
+    .container {
+        width: 970;
+    }
+}
+
+/* large Screen */
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+
+/* style up down ul*/
+.header .links ul {
+    position: absolute;
+    top: 40%;
+    left: -135%;
+    list-style: none;
+    visibility: hidden;
+    transition: visibility 0.10s;
+    
+    
+}
+
+.header .links ul li {
+    border : 1px solid black;
+    padding: 5px;
+    margin-bottom: 2px;
+    background-color: #eee;
+    font-weight:800;
+   
+    
+}
+
+.container .links:hover ul {
+    visibility: visible;
+}
+
+.header .links ul li:hover {
+    color: blue;
+    padding-left: 10px;
+}
